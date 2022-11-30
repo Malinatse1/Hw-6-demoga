@@ -1,28 +1,27 @@
 package tests;
 
-import com.codeborne.selenide.Condition;
-        import com.codeborne.selenide.Configuration;
-        import com.codeborne.selenide.WebDriverRunner;
-        import org.junit.jupiter.api.AfterAll;
-        import org.junit.jupiter.api.BeforeAll;
-        import org.junit.jupiter.api.Test;
-        import org.openqa.selenium.By;
-        import com.codeborne.selenide.selector.ByText;
-import pages.RegistrationPage;
+import org.junit.jupiter.api.Test;
 
-
-
-import java.io.File;
-
-        import static com.codeborne.selenide.Condition.text;
-        import static com.codeborne.selenide.Selenide.*;
-        import static tests.TestData.*;
-
-public class TestFillForm extends TestBase {
+public class RegistrationWithTestDataTests extends TestBase {
 
 
     @Test
     void fillFormTest() {
+        String userName = "Nataly",
+                lastName = "Bochkova",
+                email = "Nataly@natal.com",
+                gender = "Female",
+                phone = "7999999999",
+                birthDay = "23",
+                birthMonth = "June",
+                birthYear = "1992",
+                subject = "English",
+                hobbies = "Sports",
+                uploadFile = "src/test/resources/Screenshot_188.png",
+                currentAdress = "Moscow,Lenina 152",
+                state = "NCR",
+                city = "Delhi",
+                pictureName = "Screenshot_188.png";
 
         //Open page
         registrationPage.openPage()
@@ -67,4 +66,4 @@ public class TestFillForm extends TestBase {
 
 
     }
-            }
+}

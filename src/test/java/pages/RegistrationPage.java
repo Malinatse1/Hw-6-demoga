@@ -12,6 +12,7 @@ import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.text;
+import static tests.TestData.*;
 
 public class RegistrationPage {
     CalendarComponent calendarComponent = new CalendarComponent();
